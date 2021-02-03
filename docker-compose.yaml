@@ -21,27 +21,6 @@ services:
       POSTGRES_PASSWORD: postgres
     networks:
       - skynet
-  # mongo:
-  #   image: mongo
-  #   container_name: mongo
-  #   restart: always
-  #   ports:
-  #     - 27017:27017
-  #   volumes:
-  #     - ./.docker/mongodata:/data/db
-  #   networks:
-  #     - skynet
-  # redis:
-  #   container_name: redisbarber
-  #   ports:
-  #     - '6379:6379'
-  #   volumes:
-  #     - './.docker/redisdata:/data'
-  #   restart: always
-  #   image: 'redis:alpine'
-  #   networks:
-  #     - skynet
-
 networks:
   skynet:
     driver: bridge
